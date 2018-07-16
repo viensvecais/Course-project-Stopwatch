@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stopwatch</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="styling.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+</head>
+<body>
+<!--    Title-->
+    <div class="container">
+        <div id="header">Stopwatch</div>
+
+    <!--    Lap time-->
+        <div id="lap"><span id="lapMin">00</span>:<span id="lapSec">00</span>:<span id="lapCSec">00</span></div>
+    <!--    Time-->
+        <div id="time"><span id="timeMin">00</span>:<span id="timeSec">00</span>:<span id="timeCSec">00</span></div>
+
+    <!--    Control buttons-->
+        <div class="container" id="buttonContainer">
+            <div class="row">
+                <div id="left" class="col-xs-6">
+                    <button class="btn btn-default" id="startButton">Start</button>
+                    <button class="btn btn-default" id="stopButton">Stop</button>
+                    <button class="btn btn-default" id="resumeButton">Resume</button>
+                </div>
+                <div id="right" class="col-xs-6">
+                    <button class="btn btn-default" id="lapButton">Lap</button>
+                    <button class="btn btn-default" id="resetButton">Reset</button>
+                </div>
+            </div>
+        </div>
+<!--        Laps-->
+        <div id="laps">
+            
+        </div>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="stopwatch.js"></script>
+</body>
+</html>
